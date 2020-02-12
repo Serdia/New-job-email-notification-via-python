@@ -1,6 +1,4 @@
-# stop code execution press: alt + ctrl + M
-# need also see this: https://stackoverflow.com/questions/46933679/scraping-text-in-h3-and-div-tags-using-beautifulsoup-python
-# container = containers[0]
+
 
 from bs4 import BeautifulSoup
 import requests
@@ -27,7 +25,7 @@ link = ['https://www.governmentjobs.com' + links.find('a').get('href') for links
 salaries= []
 dates_posted = []
 
-# see help source: https://stackoverflow.com/questions/58997147/how-to-extract-particular-part-of-li-tag-and-omit-span-tag-inside-of-that-l/58997409#58997409
+
 
 for jobs in all_jobs:
     all_salary = jobs.find_all('li')
